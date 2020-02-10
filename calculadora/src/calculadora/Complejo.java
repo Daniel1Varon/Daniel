@@ -30,6 +30,11 @@ public class Complejo {
 		return sol;
 	}
 	
+	public Complejo multiplicacion(double i) {
+		Complejo sol=new Complejo(numero[0]*i, numero[1]*i);
+		return sol;
+	}
+	
 	public Complejo division(Complejo com) {
 		
 		double xsol=((numero[0]*com.getX())+(numero[1]*com.getY()))/(( Math.pow(com.getX(),  2))+( Math.pow( com.getY(),  2)));
